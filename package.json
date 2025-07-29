@@ -5,13 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+
     "start": "npx ts-node --transpile-only backend/src/main.ts",
     "seed": "npx ts-node --transpile-only backend/src/seed.ts",
+
+    "start": "npx ts-node backend/src/main.ts",
+    "seed": "npx ts-node backend/src/seed.ts",
+
     "dev": "cd frontend && npm run dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+
   "type": "commonjs",
   "dependencies": {
     "@nestjs/common": "^11.1.5",
@@ -32,4 +38,7 @@
   "devDependencies": {
     "ts-node": "^10.9.2"
   }
+
+  "type": "commonjs"
+
 }

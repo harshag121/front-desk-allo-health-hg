@@ -9,6 +9,7 @@ This repository contains a minimal skeleton for a clinic front desk system. It u
 
 ## Running Locally
 
+
 Install dependencies in the project root and run the servers locally:
 
 ```bash
@@ -24,6 +25,20 @@ npm start
 # install frontend deps
 cd frontend
 npm install
+
+Dependencies are not included due to environment restrictions. Install packages and run the servers locally:
+
+```bash
+# install backend deps
+npm install @nestjs/core @nestjs/common @nestjs/platform-express @nestjs/typeorm typeorm reflect-metadata sqlite3 rxjs @nestjs/config
+
+# start backend
+npx ts-node backend/src/main.ts
+
+# install frontend deps
+cd frontend
+npm install next react react-dom node-fetch tailwindcss
+
 npm run dev
 ```
 
@@ -48,3 +63,6 @@ After starting the backend you can verify it is up using cURL:
 ```bash
 curl http://localhost:3001/doctors
 ```
+
+The project is ready to deploy to services like Azure App Service. Build the frontend and start the backend as part of your startup command. Ensure the `clinic.db` SQLite file is persisted.
+
