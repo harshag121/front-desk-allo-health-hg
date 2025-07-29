@@ -1,0 +1,35 @@
+{
+  "name": "front-desk-allo-health-hg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node --transpile-only backend/src/main.ts",
+    "seed": "npx ts-node --transpile-only backend/src/seed.ts",
+    "dev": "cd frontend && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@nestjs/common": "^11.1.5",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.1.5",
+    "@nestjs/platform-express": "^11.1.5",
+    "@nestjs/typeorm": "^11.0.0",
+    "next": "^15.4.4",
+    "node-fetch": "^3.3.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "sqlite3": "^5.1.7",
+    "tailwindcss": "^4.1.11",
+    "typeorm": "^0.3.25"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
